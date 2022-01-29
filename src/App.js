@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import * as ReactBootStrap from "react-bootstrap";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+<ReactBootStrap.Navbar bg="light" expand="lg">
+  <ReactBootStrap.Container>
+    <ReactBootStrap.Navbar.Brand href="#home">Aisle-View</ReactBootStrap.Navbar.Brand>
+    <ReactBootStrap.Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <ReactBootStrap.Navbar.Collapse id="basic-navbar-nav">
+      <ReactBootStrap.Nav className="me-auto">
+        <ReactBootStrap.Nav.Link href="#home">Home</ReactBootStrap.Nav.Link>
+        <ReactBootStrap.Nav.Link href="#link">My Profile</ReactBootStrap.Nav.Link>
+        <ReactBootStrap.Nav.Link href="#link">My Lists</ReactBootStrap.Nav.Link>
+      </ReactBootStrap.Nav>
+    </ReactBootStrap.Navbar.Collapse>
+  </ReactBootStrap.Container>
+</ReactBootStrap.Navbar>
     </div>
   );
 }
